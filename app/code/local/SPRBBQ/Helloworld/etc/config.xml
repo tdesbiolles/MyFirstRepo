@@ -1,0 +1,44 @@
+<config>
+    <modules>
+        <SPRBBQ_Helloworld>
+            <version>0.1.0</version>
+        </SPRBBQ_Helloworld>
+    </modules>
+	<frontend>
+        <routers>
+            <helloworld>
+                <use>standard</use>
+                <args>
+                    <module>SPRBBQ_Helloworld</module>
+                    <frontName>helloworld</frontName>
+                </args>
+            </helloworld>
+        </routers>  
+    </frontend>
+	<global>
+		<models>
+			<alanstormdotcom_layoutviewer>
+				<class>Alanstormdotcom_Layoutviewer_Model</class>
+			</alanstormdotcom_layoutviewer>
+			
+			<core>
+				<rewrite>
+					<layout_update>Alanstormdotcom_Layoutviewer_Model_Layout_Update</layout_update>
+				</rewrite>
+			</core>
+			
+		</models>
+	
+		<events>
+			<controller_action_postdispatch>
+				<observers>
+					<alanstormdotcom_layoutviewer_model_observer>
+						<type>singleton</type>						
+						<class>Alanstormdotcom_Layoutviewer_Model_Observer</class>
+						<method>checkForLayoutDisplayRequest</method>
+					</alanstormdotcom_layoutviewer_model_observer>
+				</observers>
+			</controller_action_postdispatch>
+		</events>
+	</global>	
+</config>

@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <SPRBBQ_Configviewer>
+            <active>true</active>
+            <codePool>local</codePool>
+        </SPRBBQ_Configviewer>
+    </modules>
+</config>
