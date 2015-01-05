@@ -1,4 +1,4 @@
-<?php
+<?php/*
 	class Alanstormdotcom_Layoutviewer_Model_Layout_Update extends Mage_Core_Model_Layout_Update {		
 		//we'll display this request's package layout
 		

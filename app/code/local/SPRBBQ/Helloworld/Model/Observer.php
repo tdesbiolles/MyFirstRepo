@@ -29,7 +29,7 @@
             die(Mage::app()->getConfig()->getNode()->asXML());
         }
     }
-	
+	/*
 	class Alanstormdotcom_Layoutviewer_Model_Observer extends Varien_Object{
 		const FLAG_SHOW_LAYOUT 			= 'showLayout';
 		const FLAG_SHOW_LAYOUT_FORMAT 	= 'showLayoutFormat';		
@@ -91,4 +91,4 @@
 			$this->outputHeaders();
 			die($update->getPackageLayout()->asXML());
 		}
-	}
+	}*/
